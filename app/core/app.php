@@ -6,7 +6,7 @@ class App
     protected $method = 'index'; // default method
 
 
-    function __construct() // php routing system
+    function __construct() // PHP routing system
     {
         $arr = $this->getURL(); // get the url
 

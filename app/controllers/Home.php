@@ -1,18 +1,9 @@
 <?php
 
-class Home{ // class name must be the same as the file name
+class Home extends Controller{
     public function index()
     {
-        echo 'Home view page';
-    }
-
-    public function edit()
-    {
-        echo 'Home editing';
-    }
-
-    public function delete()
-    {
-        echo "Home deleting";
+        $data['title'] = "Home";
+        $this->view('home', $data);
     }
 }
