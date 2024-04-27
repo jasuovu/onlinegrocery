@@ -1,9 +1,9 @@
 <?php
 
-class Home{
+class Home{ // class name must be the same as the file name
     public function index()
     {
-        echo 'Home page';
+        echo 'Home view page';
     }
 
     public function edit()
@@ -13,8 +13,6 @@ class Home{
 
     public function delete()
     {
-        echo 'Home delete';
+        echo "Home deleting";
     }
-
-
 }

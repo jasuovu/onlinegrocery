@@ -6,7 +6,7 @@
 
 class _404
 {
-    function __construct()
+    function index()
     {
         echo '404 page not found';
     }
