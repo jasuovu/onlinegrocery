@@ -10,14 +10,14 @@
     <title>Grocery Store</title>
 
     <!-- Css Styles -->
-    <link rel="stylesheet" href="<?=ROOT?>/style/css/bootstrap.min.css" type="text/css">
-    <link rel="stylesheet" href="<?=ROOT?>/style/css/font-awesome.min.css" type="text/css">
-    <link rel="stylesheet" href="<?=ROOT?>/style/css/elegant-icons.css" type="text/css">
-    <link rel="stylesheet" href="<?=ROOT?>/style/css/nice-select.css" type="text/css">
-    <link rel="stylesheet" href="<?=ROOT?>/style/css/jquery-ui.min.css" type="text/css">
-    <link rel="stylesheet" href="<?=ROOT?>/style/css/owl.carousel.min.css" type="text/css">
-    <link rel="stylesheet" href="<?=ROOT?>/style/css/slicknav.min.css" type="text/css">
-    <link rel="stylesheet" href="<?=ROOT?>/style/css/style.css" type="text/css">
+    <link rel="stylesheet" href="<?=ROOT?>/assets/css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="<?=ROOT?>/assets/css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="<?=ROOT?>/assets/css/elegant-icons.css" type="text/css">
+    <link rel="stylesheet" href="<?=ROOT?>/assets/css/nice-select.css" type="text/css">
+    <link rel="stylesheet" href="<?=ROOT?>/assets/css/jquery-ui.min.css" type="text/css">
+    <link rel="stylesheet" href="<?=ROOT?>/assets/css/owl.carousel.min.css" type="text/css">
+    <link rel="stylesheet" href="<?=ROOT?>/assets/css/slicknav.min.css" type="text/css">
+    <link rel="stylesheet" href="<?=ROOT?>/assets/css/style.css" type="text/css">
 </head>
 
 
@@ -30,18 +30,17 @@
         </div>
         <div class="humberger__menu__cart">
             <ul>
-                <li><a href="#"><i class="fa fa-heart"></i> <span>1</span></a></li>
                 <li><a href="#"><i class="fa fa-shopping-bag"></i> <span>3</span></a></li>
             </ul>
             <div class="header__cart__price">item: <span>$150.00</span></div>
         </div>
         <nav class="humberger__menu__nav mobile-menu">
             <ul>
-                <li><a href="./shop-grid.html">Shop</a></li>
+                <li><a href="product">Shop</a></li>
                 <li><a href="#">Cart</a>
                     <ul class="header__menu__dropdown">
-                        <li><a href="./shoping-cart.html">Shoping Cart</a></li>
-                        <li><a href="./checkout.html">Check Out</a></li>
+                        <li><a href="<?=ROOT?>/cart">Shoping Cart</a></li>
+                        <li><a href="<?=ROOT?>/checkout">Check Out</a></li>
                     </ul>
                 </li>
             </ul>
@@ -114,11 +113,11 @@
                 <div class="col-lg-9">
                     <nav class="header__menu">
                         <ul>
-                            <li><a href="./shop-grid.html">All Products</a></li>
+                            <li><a href="product">All Products</a></li>
                             <li><a href="#">Cart</a>
                                 <ul class="header__menu__dropdown">
-                                    <li><a href="./shoping-cart.html">Shoping Cart</a></li>
-                                    <li><a href="./checkout.html">Check Out</a></li>
+                                    <li><a href="<?=ROOT?>/cart">Shoping Cart</a></li>
+                                    <li><a href="<?=ROOT?>/checkout">Check Out</a></li>
                                 </ul>
                             </li>
                         </ul>

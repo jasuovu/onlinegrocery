@@ -1,5 +1,6 @@
 <?php
 
+
 class App 
 {
     protected $controller = '_404'; // default controller
@@ -24,7 +25,7 @@ class App
 
         if(!empty($arr[1])) // if method is set
         {
-            if(method_exists($mycontroller, $mymethod)) // check if the method exists
+            if(method_exists($mycontroller, strtolower($mymethod))) // check if the method exists
             { 
                 $this->method = strtolower($mymethod); // set the method
                 unset($arr[1]); // remove the method from the array
@@ -32,7 +33,7 @@ class App
         }
 
         $arr = array_values($arr); // reindex the array, cleaning up the aray so it starts at 0        
-        call_user_func_array([$mycontroller, $this->method], $arr); // call the method
+        call_user_func_array([$mycontroller,$this->method], $arr); // call the method
     }
 
     private function getURL() // get the url

@@ -342,6 +342,8 @@ ol {
 
 .header__logo a {
 	display: inline-block;
+	width: 90px;
+    height: auto;
 }
 
 .header__menu {
@@ -563,8 +565,10 @@ ol {
 }
 
 .hero__search {
-	overflow: hidden;
-	margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    height: 100%;
 }
 
 .hero__search__form {

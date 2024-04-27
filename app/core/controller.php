@@ -15,7 +15,7 @@ class Controller{
         {
             require $filename; // if the file exists, require it
         } else {
-            echo "View does not exist"; // if the file does not exist, echo this
+            echo "View does not exist".$filename; // if the file does not exist, echo this
         }
     }
 }
